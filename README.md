@@ -1,1 +1,0 @@
-# arthurcgi.github.io
