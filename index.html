@@ -19,6 +19,27 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
+.img-long{
+  float: left;
+  width: 100px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.img-square{
+  float: left;
+  object-fit: cover;
+  width: 100px;
+  height: 400px;
+}
+.img-small{
+  float: left;
+  object-fit: cover;
+  width: 100px;
+  height: 200px;
+
+}
+
 h4 {
     font-size: 19px;
     line-height: 1.375em;
@@ -84,8 +105,8 @@ a:link:active, a:visited:active {
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#customer" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-commenting fa-fw w3-margin-right"></i>WHAT ARE THEY SAYING?</a> 
-    <a href="#charge" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-usd fa-fw w3-margin-right"></i>HOW MUCH I CHARGE?</a> 
+    <a href="#customer" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-commenting fa-fw w3-margin-right"></i>REVIEWS</a> 
+    <a href="#charge" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-box-open fa-fw w3-margin-right"></i>PACKAGES</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
@@ -109,8 +130,11 @@ a:link:active, a:visited:active {
 
   <!-- Header -->
   <header id="portfolio">
+    <!--
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    -->
     <div class="w3-container">
       <h1><b>My Portfolio</b></h1>
       <!--
@@ -128,22 +152,24 @@ a:link:active, a:visited:active {
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://arthurcgi.github.io/car-p-blue.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="https://arthurcgi.github.io/iblue-car-2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity img-small">
+      <img src="https://arthurcgi.github.io/iblue-car-3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity img-small">
+      
       <div class="w3-container w3-white">
-        <p><b>Car abc</b></p>
+        <p><b>Audi R8 V10</b></p>
 
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://arthurcgi.github.io/car-p-red.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="https://arthurcgi.github.io/iblack-car.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity img-square">
       <div class="w3-container w3-white">
-        <p><b>Car xyz</b></p>
+        <p><b>Audi R8 V10</b></p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="https://arthurcgi.github.io/car-p-black.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="https://arthurcgi.github.io/iblue-car-1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity img-square">
       <div class="w3-container w3-white">
-        <p><b>Car mno</b></p>
+        <p><b>Audi R8 V10</b></p>
       </div>
     </div>
   </div>
@@ -151,31 +177,30 @@ a:link:active, a:visited:active {
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://arthurcgi.github.io/car-g-bordo.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="https://arthurcgi.github.io/iwhite-car-2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity img-long">
       <div class="w3-container w3-white">
-        <p><b>Car prq</b></p>
+        <p><b>Porsche 959</b></p>
       </div>
     </div>
     
     <div class="w3-third w3-container w3-margin-bottom">
-      <center>
-      <video width="350" height="350" controls>
-        <source src="https://arthurcgi.github.io/red-car-video.mp4" type="video/mp4">
-        <source src="https://arthurcgi.github.io/red-car-video.ogg" type="video/ogg">
-        Your browser does not support HTML video.
-      </video>
-      </center>
+
+        <img src="https://arthurcgi.github.io/iwhite-car-1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity img-long">
+        <div class="w3-container w3-white">
+          <p><b>Porsche 959</b></p>
+        </div>
+
     </div>
 
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://arthurcgi.github.io/car-g-black.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="https://arthurcgi.github.io/iblue-car-double.jpg"alt="Norway" style="width:100%" class="w3-hover-opacity img-long">
       <div class="w3-container w3-white">
-        <p><b>Car jkl</b></p>
+        <p><b>BRZ Blue</b></p>
       </div>
     </div>
     <!--
     <div class="w3-third w3-container">
-      <img src="https://arthurcgi.github.io/car-g-red.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/car-g-red.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -198,10 +223,10 @@ a:link:active, a:visited:active {
     </div>
   </div>
 
-<!-- start - What my customers say -->  
+<!-- start - Reviews -->  
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4 id="customer" class="font-bold">What my customers are saying...</h4>
+    <h4 id="customer" class="font-bold">Customers reviews</h4>
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -255,12 +280,12 @@ a:link:active, a:visited:active {
 <!-- end - What my customers say -->
 
 
-<!-- start - How much I charge -->
+<!-- start - Packages -->
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
  
     
-    <h4 id="charge" class="font-bold">How much I charge</h4>
+    <h4 id="charge" class="font-bold">Choose a package</h4>
     <!-- Pricing Tables -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom">
@@ -273,8 +298,9 @@ a:link:active, a:visited:active {
           <li class="w3-padding-16">4 days delivery</li>
           <li class="w3-padding-16">3 revisions</li>
           <li class="w3-padding-16">---</li>
-          <li class="w3-padding-16">
-            <h2>CAD$ 20.02</h2>
+          <li class="w3-padding-16  w3-black">
+          <p><i class="fa fa-shopping-cart w3-xlarge"></i></p>
+          <a href="https://www.fiverr.com/arthur747" target="_blank">Orders on Fiverr.</a>
           </li>
         </ul>
       </div>
@@ -289,8 +315,9 @@ a:link:active, a:visited:active {
           <li class="w3-padding-16">5 days delivery</li>
           <li class="w3-padding-16">4 revisions</li>
           <li class="w3-padding-16">Enhanced Detailing</li>
-          <li class="w3-padding-16">
-            <h2>CAD$ 86.76</h2>
+          <li class="w3-padding-16  w3-teal">
+            <p><i class="fa fa-shopping-cart w3-xlarge"></i></p>
+            <a href="https://www.fiverr.com/arthur747" target="_blank">Orders on Fiverr.</a>
           </li>
         </ul>
       </div>
@@ -305,8 +332,9 @@ a:link:active, a:visited:active {
           <li class="w3-padding-16">7 days delivery</li>
           <li class="w3-padding-16">4 revisions</li>
           <li class="w3-padding-16">Enhanced Detailing</li>
-          <li class="w3-padding-16">
-            <h2>CAD$ 126.80</h2>
+          <li class="w3-padding-16 w3-black">
+            <p><i class="fa fa-shopping-cart w3-xlarge"></i></p>
+            <a href="https://www.fiverr.com/arthur747" target="_blank">Orders on Fiverr.</a>
           </li>
         </ul>
       </div>
@@ -342,17 +370,17 @@ a:link:active, a:visited:active {
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
 
       <div class="w3-third w3-dark-grey">
-        <p><i class="fab fa-artstation w3-xxxlarge w3-text-light-grey "></i></p>
+        <p><i class="fab fa-artstation  w3-xxlarge w3-text-light-grey "></i></p>
         <a href="https://arthurs.artstation.com/" target="_blank">arthurs.artstation
           - Follow me on ArtStation.</a>
       </div>
       <div class="w3-third w3-teal">
-        <p><i class="fa fa-shopping-cart w3-xxxlarge w3-text-light-grey"></i></p>
+        <p><i class="fa fa-shopping-cart w3-xxlarge w3-text-light-grey"></i></p>
         <a href="https://www.fiverr.com/arthur747" target="_blank">arthur747
           - Orders on Fiverr.</a>
       </div>
       <div class="w3-third w3-dark-grey">
-        <p><i class="fab fa-instagram w3-xxxlarge w3-text-light-grey"></i></p>
+        <p><i class="fab fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
         <a href="https://www.instagram.com/arthr.visuals/" target="_blank">arthr.visuals
         - Follow me on Instagram.</a>
       </div>
